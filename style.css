@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #e6f0ff;
+}
+
+.btn-primary {
+  background-color: #004080;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.course-list {
+  padding: 2rem;
+}
+
+.course-card {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.video-section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark header,
+.dark footer {
+  background-color: #1a1a1a;
+}
+
+.dark .course-card,
+.dark .video-section {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.toggle-btn {
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}

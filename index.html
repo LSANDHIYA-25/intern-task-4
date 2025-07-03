@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnZone - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">LearnZone</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <button class="toggle-btn" onclick="toggleDarkMode()">🌓 Dark Mode</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to LearnZone</h1>
+    <p>Your one-stop platform for online learning</p>
+    <a href="courses.html" class="btn-primary">View Courses</a>
+  </section>
+
+  <footer>
+    <p>© 2025 LearnZone. All rights reserved.</p>
+  </footer>
+  <script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+  }
+</script>
+
+</body>
+</html>

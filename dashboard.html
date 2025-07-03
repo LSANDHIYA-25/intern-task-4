@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - LearnZone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">LearnZone</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+      <button onclick="toggleDarkMode()">🌓 Dark Mode</button>
+    </nav>
+  </header>
+
+  <section class="dashboard">
+    <h2>📋 My Dashboard</h2>
+    <div class="course-card">
+      <h3>HTML & CSS</h3>
+      <progress id="htmlProgress" value="0" max="100"></progress>
+    <span id="htmlPercent">0%</span><br>
+    
+    </div>
+    <div class="course-card">
+      <h3>JavaScript Basics</h3>
+      <progress id="jsProgress" value="0" max="100"></progress>
+    <span id="jsPercent">0%</span><br>
+    </div>
+    <div class="course-card">
+      <h3>React for Beginners</h3>
+      <progress id="reactProgress" value="0" max="100"></progress>
+    <span id="reactPercent">0%</span><br>
+    </div>
+    <div class="course-card">
+      <h3>Python</h3>
+      <progress id="pythonProgress" value="0" max="100"></progress>
+    <span id="pythonPercent">0%</span><br>
+    </div>
+  </section>
+
+  <footer><p>© 2025 LearnZone. All rights reserved.</p></footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+
+    function updateProgress() {
+      const html = localStorage.getItem("progress_html") || 0;
+      const js = localStorage.getItem("progress_js") || 0;
+      const react = localStorage.getItem("progress_react") || 0;
+
+      document.getElementById("htmlProgress").value = html;
+      document.getElementById("htmlPercent").textContent = html + "% completed";
+
+      document.getElementById("jsProgress").value = js;
+      document.getElementById("jsPercent").textContent = js + "% completed";
+
+      document.getElementById("reactProgress").value = react;
+      document.getElementById("reactPercent").textContent = react + "% completed";
+    }
+
+    updateProgress();
+  </script>
+</body>
+</html>
